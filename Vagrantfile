@@ -23,9 +23,6 @@ Vagrant::Config.run do |config|
 					'date.timezone' => 'Europe/Berlin'
 				}
 			}
-			#:typo3-flow => {
-			#	:hosts => [{ :name => "typo3flow", :domain => "typo3flow.local", :gitRepo => "git://git.typo3.org/FLOW3/Distributions/Base.git"}]
-			#},
 			#:oh_my_zsh => {
 			#	:users => ['vagrant']
 			#}
