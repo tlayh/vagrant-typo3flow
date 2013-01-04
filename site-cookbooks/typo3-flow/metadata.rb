@@ -1,0 +1,5 @@
+maintainer       "Thomas Layh"
+maintainer_email "thomas@layh.com"
+license          "MIT"
+description      "Install and configure TYPO3Flow"
+version          "0.0.1"

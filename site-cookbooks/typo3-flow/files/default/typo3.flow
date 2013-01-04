@@ -1,0 +1,20 @@
+<VirtualHost *:80>
+
+	ServerAdmin typo3flow@localhost.de
+	ServerName typo3.flow
+
+	DocumentRoot /var/www/typo3.flow/Web/
+
+	SetEnv FLOW_CONTEXT Development
+
+	<Directory /var/www/typo3.flow>
+
+		Options FollowSymLinks
+		AllowOverride FileInfo Options=All,MultiViews
+
+		<Ifmodule mod_php5.c>
+			php_admin_value memory_limit 256M
+		</Ifmodule>
+
+	</Directory>
+</VirtualHost>
