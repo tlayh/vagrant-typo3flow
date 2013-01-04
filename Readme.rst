@@ -25,3 +25,5 @@ Installation:
 	192.168.23.3 typo3.flow
 
 5. Run "vagrant up"
+
+6. Shutdown with "vagrant suspend" and restart with "vagrant resume"
