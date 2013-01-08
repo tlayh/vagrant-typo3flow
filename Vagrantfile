@@ -18,11 +18,11 @@ Vagrant::Config.run do |config|
 		#chef.add_recipe "chef-oh-my-zsh"
 
 		chef.json = {
-			'php' => {
-				'directives' => {
-					'date.timezone' => 'Europe/Berlin'
-				}
-			}
+			#'php' => {
+			#	'directives' => {
+			#		'date.timezone' => 'Europe/Berlin'
+			#	}
+			#}
 			#:oh_my_zsh => {
 			#	:users => ['vagrant']
 			#}

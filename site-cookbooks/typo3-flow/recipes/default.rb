@@ -28,9 +28,10 @@ cookbook_file "/etc/apache2/sites-available/typo3.flow" do
 	mode 0755
 end
 
-# cp php.ini
-execute "copy php.ini" do
-	command "cp /etc/php5/cli/php.ini /etc/php5/apache2/php.ini && cp /etc/php5/cli/php.ini /etc/php5/cgi/php.ini"
+# prepare php.ini config
+cookbook_file "/etc/php5/conf.d/php_dateTimeZone.ini" do
+	source "php_dateTimeZone.ini"
+	mode 0655
 end
 execute "restart apache" do
 	command "/etc/init.d/apache2 reload"
