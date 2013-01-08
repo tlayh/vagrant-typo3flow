@@ -19,6 +19,7 @@ include_recipe "php::package"
 	include_recipe "php::module_#{mod}"
 end
 
+include_recipe "mysql::server"
 include_recipe "git"
 include_recipe "typo3-flow::basic"
 
