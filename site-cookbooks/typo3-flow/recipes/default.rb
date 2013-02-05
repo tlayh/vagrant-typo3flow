@@ -46,24 +46,11 @@ apache_site "typo3.flow" do
 	enable true
 end
 
-# clone and install typo3flow
-execute "clone typo3.flow base" do
-	command "git clone git://git.typo3.org/FLOW3/Distributions/Base.git /var/www/typo3.flow"
-	creates "/var/www/typo3.flow/"
-end
-
-execute "get composer" do
-	command "curl -s https://getcomposer.org/installer | php"
-	cwd "/var/www/typo3.flow"
-end
-
-execute "install TYPO3.Flow" do
-	command "php composer.phar install --dev"
-	cwd "/var/www/typo3.flow"
-
-end
-
-execute "fixing permissions" do
-	command "Packages/Framework/TYPO3.Flow/Scripts/setfilepermissions.sh vagrant vagrant www-data"
-	cwd "/var/www/typo3.flow/"
+# install composer and TYPO3 Flow
+include_recipe "composer"
+typo3_flow "/var/www/typo3.flow" do
+    command_line_user "vagrant"
+    web_user "vagrant"
+    stability "dev"
+    action :install
 end
