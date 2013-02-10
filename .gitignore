@@ -3,3 +3,4 @@
 Cheffile.lock
 tmp/
 cookbooks/
+.rvmrc
