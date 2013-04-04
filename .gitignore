@@ -4,3 +4,4 @@ Cheffile.lock
 tmp/
 cookbooks/
 .rvmrc
+.DS_Store
