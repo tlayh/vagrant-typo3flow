@@ -9,8 +9,7 @@ cookbook "apache2"
 cookbook "mysql"
 cookbook "apt"
 cookbook "git"
-cookbook "composer",
-  :git => "git://github.com/Morphodo/composer.git"
+cookbook "composer"
 cookbook "typo3_flow",
   :git => "git://github.com/Morphodo/typo3_flow-chef-recipe.git"
 # install oh-my-zsh
