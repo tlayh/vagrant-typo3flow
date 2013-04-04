@@ -10,8 +10,6 @@ cookbook "mysql"
 cookbook "apt"
 cookbook "git"
 cookbook "composer"
-cookbook "typo3_flow",
-  :git => "git://github.com/Morphodo/typo3_flow-chef-recipe.git"
 # install oh-my-zsh
 cookbook "chef-oh-my-zsh",
     :git => "git://github.com/tlayh/chef-oh-my-zsh.git"
