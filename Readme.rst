@@ -13,18 +13,21 @@ Installation:
 --------------
 
 1. Download the Vagrant installer from:
-	http://downloads.vagrantup.com/
+    http://downloads.vagrantup.com/
 
 2. Install Librarian and librarian-chef and vagrant-vbguest
-	vagrant plugin install librarian
-	vagrant plugin install librarian-chef
-	vagrant plugin install vagrant-vbguest
+::
+    vagrant plugin install librarian
+    vagrant plugin install librarian-chef
+    vagrant plugin install vagrant-vbguest
 
 3. Install required cookbooks
-	librarian-chef install
+::
+  librarian-chef install
 
 4. Add to your host file
-	192.168.23.3 typo3.flow
+::
+   192.168.23.3 typo3.flow
 
 5. Run "vagrant up"
 	Will take about 10 Minutes, depending on your system speed and download rate
