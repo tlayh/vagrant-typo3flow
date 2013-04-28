@@ -12,11 +12,12 @@ Will install a TYPO3Flow Welcome package including all required setups for the s
 Installation:
 --------------
 
-1. Setup Ruby and RubyGems on your system.
+1. Download the Vagrant installer from: http://downloads.vagrantup.com/
 
-2. Install Vagrant and Librarian
-	gem install vagrant
-	gem install librarian
+2. Install Librarian and librarian-chef and vagrant-vbguest
+	vagrant plugin install librarian
+	vagrant plugin install librarian-chef
+	vagrant plugin install vagrant-vbguest
 
 3. Install required cookbooks
 	librarian-chef install
