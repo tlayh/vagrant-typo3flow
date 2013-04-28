@@ -1,7 +1,7 @@
 TYPO3Flow Vagrant Box
 ==============================
 
-Copyright 2013, Thomas Layh <thomas@layh.com>
+Copyright 2013, Thomas Layh // http://layh.com
 
 Description:
 --------------
