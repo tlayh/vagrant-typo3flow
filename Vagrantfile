@@ -15,7 +15,7 @@ Vagrant::Config.run do |config|
 		#chef.log_level = :debug
 
 		chef.add_recipe "typo3-flow"
-		#chef.add_recipe "chef-oh-my-zsh"
+		chef.add_recipe "chef-oh-my-zsh"
 
 		chef.json = {
 			#'php' => {
@@ -23,9 +23,9 @@ Vagrant::Config.run do |config|
 			#		'date.timezone' => 'Europe/Berlin'
 			#	}
 			#}
-			#:oh_my_zsh => {
-			#	:users => ['vagrant']
-			#}
+			:oh_my_zsh => {
+				:users => ['vagrant']
+			}
 		}
 	end
 
