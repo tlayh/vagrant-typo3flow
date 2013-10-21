@@ -48,7 +48,7 @@ end
 
 # clone and install typo3flow
 execute "clone typo3.flow base" do
-	command "git clone git://git.typo3.org/FLOW3/Distributions/Base.git /var/www/typo3.flow"
+	command "git clone git://git.typo3.org/Flow/Distributions/Base.git /var/www/typo3.flow"
 	creates "/var/www/typo3.flow/"
 end
 
