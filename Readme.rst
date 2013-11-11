@@ -12,6 +12,8 @@ Will install a TYPO3Flow Welcome package including all required setups for the s
 Installation:
 --------------
 
+*Tested with Vagrant 1.3.5 and VirtualBox 4.3.2*
+
 1. Download the Vagrant installer from:
     http://downloads.vagrantup.com/
 
