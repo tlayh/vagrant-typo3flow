@@ -1,5 +1,14 @@
-maintainer       "Thomas Layh"
-maintainer_email "thomas@layh.com"
-license          "MIT"
-description      "Install and configure TYPO3Flow"
-version          "0.0.1"
+name             'typo3-flow'
+maintainer       'Thomas Layh'
+maintainer_email 'thomas@layh.com'
+license          'MIT'
+description      'Install and configure TYPO3Flow'
+version          '0.0.2'
+
+depends 'ntp'
+depends 'php'
+depends 'apache2'
+depends 'mysql'
+depends 'git'
+depends 'apt'
+depends 'composer'
